@@ -1,0 +1,13 @@
+@import "config";
+@import "home";
+
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Open Sans",sans-serif;
+  line-height: 1.5rem;
+}
+
+button:hover {
+  color: lighten($active-color, 40%);
+  box-shadow: 0 0.5rem 1rem rgba($active-color, 0.5);
+}
+

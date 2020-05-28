@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url("../img/header-banner.jpg");
+  width: 100%;
+}
+header h1 {
+  font-size: 4rem;
+}
+header h4 {
+  font-size: 2rem;
+}
+header h6 {
+  font-size: 1.3rem;
+}
+header .container {
+  height: 100%;
+}
+header > div {
+  background-image: url("../img/people.png");
+  background-size: 40%;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+header .nav-link {
+  color: white;
+}
+header .row:nth-child(2) {
+  height: 90vh;
+}
+
+.statistic {
+  background: url("../img/statistics-bg.png");
+  background-size: cover;
+}
+.statistic .card {
+  background: none;
+}
+.statistic .card img {
+  position: relative;
+  margin: 0 auto;
+  width: 78px;
+  height: 79px;
+}
+
+.whatis {
+  box-shadow: inset 0 10px 20px -10px lightgray;
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+}
+.whatis img {
+  max-width: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Open Sans", sans-serif;
+  line-height: 1.5rem;
+}
+
+button:hover {
+  color: #fae3e5;
+  box-shadow: 0 0.5rem 1rem rgba(220, 53, 69, 0.5);
+}
+
+/*# sourceMappingURL=style.css.map */

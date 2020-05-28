@@ -1,0 +1,64 @@
+$navbar-dark-color:                 white;
+$navbar-dark-hover-color:           $active-color;
+$navbar-dark-active-color:          $active-color;
+$navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$active-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+
+header {
+  background-image: url("../img/header-banner.jpg");
+  width: 100%;
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  h6 {
+    font-size: 1.3rem;
+  }
+
+  .container {
+    height: 100%;
+  }
+
+  &>div {
+    background-image: url("../img/people.png");
+    background-size: 40%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
+
+  .nav-link {
+    color: white;
+  }
+
+  .row:nth-child(2) {
+    height: 90vh;
+  }
+}
+
+.statistic {
+  background: url("../img/statistics-bg.png");
+  background-size: cover;
+  .card {
+    background: none;
+
+    img {
+      position: relative;
+      margin: 0 auto;
+      width: 78px;
+      height: 79px;
+    }
+  }
+}
+
+.whatis {
+  box-shadow: inset  0  10px 20px -10px lightgray;
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+  img {
+    max-width: 100%;
+  }
+}
