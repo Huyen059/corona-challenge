@@ -44,12 +44,46 @@ header {
   background-size: cover;
   .card {
     background: none;
+  }
 
-    img {
-      position: relative;
-      margin: 0 auto;
-      width: 78px;
-      height: 79px;
+  #statisticImg1 {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 79px;
+    height: 79px;
+    background: url(../img/sprite-home.png);
+    background-position: top left;
+    transition: 0.1s background-position;
+  
+    &:hover {
+      background-position: bottom left;
+    }
+  }
+
+  #statisticImg2 {
+    @extend #statisticImg1;
+    background-position: 75px 0;
+
+    &:hover {
+      background-position: 75px 79px;
+    }
+  }
+
+  #statisticImg3 {
+    @extend #statisticImg1;
+    background-position: 150px 0px;
+
+    &:hover {
+      background-position: 150px 79px;
+    }
+  }
+
+  #statisticImg4 {
+    @extend #statisticImg1;
+    background-position: top right;
+
+    &:hover {
+      background-position: bottom right;
     }
   }
 }
@@ -62,3 +96,4 @@ header {
     max-width: 100%;
   }
 }
+
