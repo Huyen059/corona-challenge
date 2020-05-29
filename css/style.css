@@ -50,6 +50,22 @@ header .row:nth-child(2) {
   background: none;
 }
 
+.statistic .card1:hover #statisticImg1, .statistic .card1:hover #statisticImg2, .statistic .card1:hover #statisticImg3, .statistic .card1:hover #statisticImg4 {
+  background-position: bottom left;
+}
+
+.statistic .card2:hover #statisticImg2 {
+  background-position: 75px 79px;
+}
+
+.statistic .card3:hover #statisticImg3 {
+  background-position: 150px 79px;
+}
+
+.statistic .card4:hover #statisticImg4 {
+  background-position: bottom right;
+}
+
 .statistic #statisticImg1, .statistic #statisticImg2, .statistic #statisticImg3, .statistic #statisticImg4 {
   margin: 0 auto;
   overflow: hidden;
@@ -61,32 +77,16 @@ header .row:nth-child(2) {
   transition: 0.1s background-position;
 }
 
-.statistic #statisticImg1:hover, .statistic #statisticImg2:hover, .statistic #statisticImg3:hover, .statistic #statisticImg4:hover {
-  background-position: bottom left;
-}
-
 .statistic #statisticImg2 {
   background-position: 75px 0;
-}
-
-.statistic #statisticImg2:hover {
-  background-position: 75px 79px;
 }
 
 .statistic #statisticImg3 {
   background-position: 150px 0px;
 }
 
-.statistic #statisticImg3:hover {
-  background-position: 150px 79px;
-}
-
 .statistic #statisticImg4 {
   background-position: top right;
-}
-
-.statistic #statisticImg4:hover {
-  background-position: bottom right;
 }
 
 .whatis {

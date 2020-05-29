@@ -46,6 +46,22 @@ header {
     background: none;
   }
 
+  .card1:hover #statisticImg1  {
+    background-position: bottom left;
+  }
+
+  .card2:hover #statisticImg2  {
+    background-position: 75px 79px;
+  }
+
+  .card3:hover #statisticImg3  {
+    background-position: 150px 79px;
+  }
+
+  .card4:hover #statisticImg4  {
+    background-position: bottom right;
+  }
+
   #statisticImg1 {
     margin: 0 auto;
     overflow: hidden;
@@ -55,36 +71,22 @@ header {
     background-position: top left;
     transition: 0.1s background-position;
   
-    &:hover {
-      background-position: bottom left;
-    }
+    
   }
 
   #statisticImg2 {
     @extend #statisticImg1;
     background-position: 75px 0;
-
-    &:hover {
-      background-position: 75px 79px;
-    }
   }
 
   #statisticImg3 {
     @extend #statisticImg1;
     background-position: 150px 0px;
-
-    &:hover {
-      background-position: 150px 79px;
-    }
   }
 
   #statisticImg4 {
     @extend #statisticImg1;
     background-position: top right;
-
-    &:hover {
-      background-position: bottom right;
-    }
   }
 }
 
