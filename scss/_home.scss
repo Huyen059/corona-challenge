@@ -46,19 +46,19 @@ header {
     background: none;
   }
 
-  .card1:hover #statisticImg1  {
+  #statisticImgCtn1:hover #statisticImg1  {
     background-position: bottom left;
   }
 
-  .card2:hover #statisticImg2  {
+  #statisticImgCtn2:hover #statisticImg2  {
     background-position: 75px 79px;
   }
 
-  .card3:hover #statisticImg3  {
+  #statisticImgCtn3:hover #statisticImg3  {
     background-position: 150px 79px;
   }
 
-  .card4:hover #statisticImg4  {
+  #statisticImgCtn4:hover #statisticImg4  {
     background-position: bottom right;
   }
 
@@ -70,8 +70,6 @@ header {
     background: url(../img/sprite-home.png);
     background-position: top left;
     transition: 0.1s background-position;
-  
-    
   }
 
   #statisticImg2 {
@@ -99,3 +97,88 @@ header {
   }
 }
 
+.symptoms {
+  background: url(../img/symptoms-bg.png);
+  background-size: cover;
+
+  .card {
+    background: none;
+  }
+
+  .card:hover h5 {
+    color: #f12059;
+  }
+
+  #symptomImgCtn1:hover #symptomImg1 {
+    border-color: white;
+    background-color: #f12059;
+    background-position: 0 43%;
+  }
+
+  #symptomImgCtn2:hover #symptomImg2 {
+    border-color: white;
+    background-color: #f12059;
+    background-position: 43% 43%;
+  }
+
+  #symptomImgCtn3:hover #symptomImg3 {
+    border-color: white;
+    background-color: #f12059;
+    background-position: 87% 43%;
+  }
+
+  #symptomImgCtn4:hover #symptomImg4 {
+    border-color: white;
+    background-color: #f12059;
+    background-position: 2% 54%;
+  }
+
+  #symptomImgCtn5:hover #symptomImg5 {
+    border-color: white;
+    background-color: #f12059;
+    background-position: 44% 54%;
+  }
+
+  #symptomImgCtn6:hover #symptomImg6 {
+    border-color: white;
+    background-color: #f12059;
+    background-position: 87% 54%;
+  }
+
+  #symptomImg1 {
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 2px dotted black;
+    width: 100px;
+    height: 100px;
+    background: url(../img/sprite-home-v3.png);
+    background-position: 0 20%;
+    transition: 0.1s background-position;
+  }
+
+  #symptomImg2 {
+    @extend #symptomImg1;
+    background-position: 43% 20%;
+  }
+
+  #symptomImg3 {
+    @extend #symptomImg1;
+    background-position: 87% 20%;
+  }
+
+  #symptomImg4 {
+    @extend #symptomImg1;
+    background-position: 2% 31%;
+  }
+
+  #symptomImg5 {
+    @extend #symptomImg1;
+    background-position: 44% 31%;
+  }
+
+  #symptomImg6 {
+    @extend #symptomImg1;
+    background-position: 87% 31%;
+  }
+}

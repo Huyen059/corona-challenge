@@ -50,19 +50,19 @@ header .row:nth-child(2) {
   background: none;
 }
 
-.statistic .card1:hover #statisticImg1, .statistic .card1:hover #statisticImg2, .statistic .card1:hover #statisticImg3, .statistic .card1:hover #statisticImg4 {
+.statistic #statisticImgCtn1:hover #statisticImg1, .statistic #statisticImgCtn1:hover #statisticImg2, .statistic #statisticImgCtn1:hover #statisticImg3, .statistic #statisticImgCtn1:hover #statisticImg4 {
   background-position: bottom left;
 }
 
-.statistic .card2:hover #statisticImg2 {
+.statistic #statisticImgCtn2:hover #statisticImg2 {
   background-position: 75px 79px;
 }
 
-.statistic .card3:hover #statisticImg3 {
+.statistic #statisticImgCtn3:hover #statisticImg3 {
   background-position: 150px 79px;
 }
 
-.statistic .card4:hover #statisticImg4 {
+.statistic #statisticImgCtn4:hover #statisticImg4 {
   background-position: bottom right;
 }
 
@@ -98,6 +98,88 @@ header .row:nth-child(2) {
 
 .whatis img {
   max-width: 100%;
+}
+
+.symptoms {
+  background: url(../img/symptoms-bg.png);
+  background-size: cover;
+}
+
+.symptoms .card {
+  background: none;
+}
+
+.symptoms .card:hover h5 {
+  color: #f12059;
+}
+
+.symptoms #symptomImgCtn1:hover #symptomImg1, .symptoms #symptomImgCtn1:hover #symptomImg2, .symptoms #symptomImgCtn1:hover #symptomImg3, .symptoms #symptomImgCtn1:hover #symptomImg4, .symptoms #symptomImgCtn1:hover #symptomImg5, .symptoms #symptomImgCtn1:hover #symptomImg6 {
+  border-color: white;
+  background-color: #f12059;
+  background-position: 0 43%;
+}
+
+.symptoms #symptomImgCtn2:hover #symptomImg2 {
+  border-color: white;
+  background-color: #f12059;
+  background-position: 43% 43%;
+}
+
+.symptoms #symptomImgCtn3:hover #symptomImg3 {
+  border-color: white;
+  background-color: #f12059;
+  background-position: 87% 43%;
+}
+
+.symptoms #symptomImgCtn4:hover #symptomImg4 {
+  border-color: white;
+  background-color: #f12059;
+  background-position: 2% 54%;
+}
+
+.symptoms #symptomImgCtn5:hover #symptomImg5 {
+  border-color: white;
+  background-color: #f12059;
+  background-position: 44% 54%;
+}
+
+.symptoms #symptomImgCtn6:hover #symptomImg6 {
+  border-color: white;
+  background-color: #f12059;
+  background-position: 87% 54%;
+}
+
+.symptoms #symptomImg1, .symptoms #symptomImg2, .symptoms #symptomImg3, .symptoms #symptomImg4, .symptoms #symptomImg5, .symptoms #symptomImg6 {
+  border-radius: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 2px dotted black;
+  width: 100px;
+  height: 100px;
+  background: url(../img/sprite-home-v3.png);
+  background-position: 0 20%;
+  -webkit-transition: 0.1s background-position;
+  transition: 0.1s background-position;
+}
+
+.symptoms #symptomImg2 {
+  background-position: 43% 20%;
+}
+
+.symptoms #symptomImg3 {
+  background-position: 87% 20%;
+}
+
+.symptoms #symptomImg4 {
+  background-position: 2% 31%;
+}
+
+.symptoms #symptomImg5 {
+  background-position: 44% 31%;
+}
+
+.symptoms #symptomImg6 {
+  background-position: 87% 31%;
 }
 
 body {
