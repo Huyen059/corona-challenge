@@ -182,9 +182,112 @@ header .row:nth-child(2) {
   background-position: 87% 31%;
 }
 
+.howToProtect .d-flex {
+  height: 33%;
+}
+
+.howToProtect .d-flex.left {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  text-align: right;
+}
+
+.howToProtect h5 {
+  cursor: pointer;
+}
+
+.howToProtect .protectItems:hover h5 {
+  color: #f12059;
+}
+
+.howToProtect .row:nth-child(2) {
+  background-image: url(../img/protect-bg.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center 10%;
+}
+
+.howToProtect #protectImgCtn1:hover #protectImg1, .howToProtect #protectImgCtn1:hover #protectImg2, .howToProtect #protectImgCtn1:hover #protectImg3, .howToProtect #protectImgCtn1:hover #protectImg4, .howToProtect #protectImgCtn1:hover #protectImg5, .howToProtect #protectImgCtn1:hover #protectImg6 {
+  border-color: white;
+  background-color: #f12059;
+  background-position: 2% 90%;
+}
+
+.howToProtect #protectImgCtn2:hover #protectImg2 {
+  border-color: white;
+  background-color: #f12059;
+  background-position: 86% 89%;
+}
+
+.howToProtect #protectImgCtn3:hover #protectImg3 {
+  border-color: white;
+  background-color: #f12059;
+  background-position: 45.5% 100.5%;
+}
+
+.howToProtect #protectImgCtn4:hover #protectImg4 {
+  border-color: white;
+  background-color: #f12059;
+  background-position: 45% 89%;
+}
+
+.howToProtect #protectImgCtn5:hover #protectImg5 {
+  border-color: white;
+  background-color: #f12059;
+  background-position: 2% 101%;
+}
+
+.howToProtect #protectImgCtn6:hover #protectImg6 {
+  border-color: white;
+  background-color: #f12059;
+  background-position: 86% 101%;
+}
+
+.howToProtect #protectImg1, .howToProtect #protectImg2, .howToProtect #protectImg3, .howToProtect #protectImg4, .howToProtect #protectImg5, .howToProtect #protectImg6 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: url(../img/sprite-home-v3.png);
+  background-position: 2% 66%;
+}
+
+.howToProtect #protectImg2 {
+  background-position: 86% 66%;
+}
+
+.howToProtect #protectImg3 {
+  background-position: 45.5% 77.5%;
+}
+
+.howToProtect #protectImg4 {
+  background-position: 45% 66%;
+}
+
+.howToProtect #protectImg5 {
+  background-position: 2% 78%;
+}
+
+.howToProtect #protectImg6 {
+  background-position: 86% 78%;
+}
+
+@media (max-width: 768px) {
+  .howToProtect .d-flex.left {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: left;
+  }
+}
+
 body {
   font-family: -apple-system,BlinkMacSystemFont,"Open Sans",sans-serif;
   line-height: 1.5rem;
+  overflow-x: hidden;
 }
 
 button:hover {
