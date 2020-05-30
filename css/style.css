@@ -274,6 +274,34 @@ header .row:nth-child(2) {
   background-position: 86% 78%;
 }
 
+.liveUpdate {
+  background: url(../img/subscribe-bg.jpg);
+  background-size: cover;
+}
+
+.liveUpdate .formCtn {
+  position: relative;
+}
+
+.liveUpdate #emailInput {
+  background-color: #111D33;
+  opacity: 0.7;
+  border: 1px solid #243757;
+  outline: none;
+  font-size: 1rem;
+  padding: 2rem;
+  color: white;
+}
+
+.liveUpdate #subcribeBtn {
+  font-size: 1.1rem;
+  padding: 1.2rem;
+  position: absolute;
+  z-index: 1;
+  top: 1rem;
+  right: 1rem;
+}
+
 @media (max-width: 768px) {
   .howToProtect .d-flex.left {
     -webkit-box-orient: horizontal;
@@ -281,6 +309,9 @@ header .row:nth-child(2) {
         -ms-flex-direction: row;
             flex-direction: row;
     text-align: left;
+  }
+  .liveUpdate h2, .liveUpdate h4 {
+    text-align: center;
   }
 }
 
