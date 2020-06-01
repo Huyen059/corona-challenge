@@ -245,6 +245,11 @@ header .row:nth-child(2) {
   right: 1rem;
 }
 
+.faq {
+  background: url("../img/Picture02-left.png") top left no-repeat, url("../img/Picture02-right.png") top right no-repeat;
+  background-size: 228px, 320px;
+  overflow: hidden;
+}
 .faq h6 {
   font-weight: bold;
 }
@@ -290,6 +295,15 @@ header .row:nth-child(2) {
   .liveUpdate .title {
     border: 1px solid red;
     text-align: center;
+  }
+
+  .faq .collapsedSection .collapseItemsCtn {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1500px) {
+  .faq {
+    background: none;
   }
 }
 body {
