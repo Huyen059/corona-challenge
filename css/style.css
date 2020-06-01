@@ -245,6 +245,9 @@ header .row:nth-child(2) {
   right: 1rem;
 }
 
+.faq h6 {
+  font-weight: bold;
+}
 .faq .collapsedSection .collapseItemsCtn {
   display: flex;
 }
@@ -268,12 +271,12 @@ header .row:nth-child(2) {
 .faq .collapsedSection .collapseItems .collapseButton.active {
   background-color: #dc3545;
   color: white;
-  box-shadow: 0.1rem 0.1rem 0.5rem #dc3545;
+  box-shadow: 0.1rem 0.1rem 1rem #ced4da;
 }
 .faq .collapsedSection .collapseItems .collapseContentCtn {
   padding: 0 1rem 1rem 1rem;
 }
-.faq .collapsedSection .collapseItems .collapseButton, .faq .collapsedSection .collapseItems h5 {
+.faq .collapsedSection .collapseItems .collapseButton, .faq .collapsedSection .collapseItems h6 {
   cursor: pointer;
 }
 
