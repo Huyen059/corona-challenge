@@ -1,3 +1,26 @@
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$blue:    #007bff;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #e83e8c;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #28a745;
+$teal:    #20c997;
+$cyan:    #17a2b8;
+
 $navbar-dark-color:                 white;
 $navbar-dark-hover-color:           $active-color;
 $navbar-dark-active-color:          $active-color;
@@ -79,7 +102,7 @@ header {
 
   #statisticImg3 {
     @extend #statisticImg1;
-    background-position: 150px 0px;
+    background-position: 150px 0;
   }
 
   #statisticImg4 {
@@ -306,7 +329,48 @@ header {
     top: 1rem;
     right: 1rem;
   }
-  
+}
+
+.faq {
+  .collapsedSection {
+    .collapseItemsCtn {
+      display: flex;
+    }
+
+    .collapseItems {
+      flex-basis: 50%;
+
+      .collapseItem {
+        display: grid;
+        grid-template-columns: 1fr 9fr;
+      }
+
+      .collapseButton {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-left: auto;//make button float to the right
+        background-color: $gray-300;
+        display: flex; //center arrow
+        justify-content: center;
+        align-items: center;
+
+        &.active {
+          background-color: $red;
+          color: white;
+          box-shadow: .1rem .1rem .5rem $red;
+        }
+      }
+
+      .collapseContentCtn {
+        padding: 0 1rem 1rem 1rem;
+      }
+
+      .collapseButton, h5 {
+        cursor: pointer;
+      }
+    }
+  }
 }
 
 
@@ -322,7 +386,7 @@ header {
 @media (max-width: 992px) {
   .liveUpdate {
     .title {
-      border: 1px solid red
+      border: 1px solid red;
       text-align: center;
     }
   }
