@@ -285,10 +285,72 @@ header .row:nth-child(2) {
   cursor: pointer;
 }
 
+.doctors .staffCardsSection .staffCardsCtn {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+}
+.doctors .staffCardsSection .staffCardCtn {
+  position: relative;
+  border: 1px solid #dee2e6;
+  margin: 0 0.5rem 1rem 0.5rem;
+}
+.doctors .staffCardsSection .staffCardCtn p {
+  color: #6c757d;
+  font-style: italic;
+}
+.doctors .staffCardsSection .staffImgCtn {
+  overflow: hidden;
+  max-width: 100%;
+  height: 23vw;
+  margin-bottom: 1rem;
+}
+.doctors .staffCardsSection .staffImgCtn img {
+  width: 100%;
+  min-height: 100%;
+}
+.doctors .staffCardsSection .staffContactCtn {
+  background-color: rgba(38, 48, 51, 0.9);
+  width: 100%;
+  height: 23vw;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+.doctors .staffCardsSection .staffContactCtn a {
+  border: 1px solid #495057;
+  width: 30px;
+  height: 30px;
+  margin: 0.3rem;
+}
+.doctors .staffCardsSection .staffContactCtn a:hover {
+  border-color: white;
+  background-color: white;
+}
+.doctors .staffCardsSection .staffCardCtn:hover .staffContactCtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.doctors .staffCardsSection .staffCardCtn:hover {
+  background-color: #dc3545;
+  color: white;
+}
+.doctors .staffCardsSection .staffCardCtn:hover h5, .doctors .staffCardsSection .staffCardCtn:hover p {
+  color: white;
+}
+
 @media (max-width: 768px) {
   .howToProtect .d-flex.left {
     flex-direction: row;
     text-align: left;
+  }
+
+  .doctors .staffCardsSection .staffCardsCtn {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .doctors .staffCardsSection .staffImgCtn, .doctors .staffCardsSection .staffContactCtn {
+    height: 40vw;
   }
 }
 @media (max-width: 992px) {

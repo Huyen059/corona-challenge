@@ -332,7 +332,6 @@ header {
 }
 
 .faq {
-
   background: url("../img/Picture02-left.png") top left no-repeat, url("../img/Picture02-right.png") top right no-repeat;
   background-size: 228px, 320px;
   overflow: hidden;
@@ -382,12 +381,92 @@ header {
   }
 }
 
+.doctors {
+  .staffCardsSection {
+    .staffCardsCtn {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      text-align: center;
+    }
+
+    .staffCardCtn {
+      position: relative;
+      border: 1px solid $gray-300;
+      margin: 0 0.5rem 1rem 0.5rem;
+
+      p {
+        color: $gray-600;
+        font-style: italic; //Function in italic
+      }
+    }
+
+    .staffImgCtn {
+      overflow: hidden;
+      max-width: 100%;
+      height: 23vw;
+      margin-bottom: 1rem;
+
+      img {
+        width: 100%;
+        min-height: 100%;
+      }
+    }
+
+    .staffContactCtn {
+      background-color: rgba(38, 48, 51, 0.9);
+      width: 100%;
+      height: 23vw; //as big as img container
+      position: absolute;
+      top: 0;
+      display: none;
+
+      a {
+        border: 1px solid $gray-700;
+        width: 30px;
+        height: 30px;
+        margin: 0.3rem;
+
+        &:hover {
+          border-color: white;
+          background-color: white;
+        }
+      }
+    }
+
+    .staffCardCtn:hover .staffContactCtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .staffCardCtn:hover {
+      background-color: $red;
+      color: white;
+
+      h5, p {
+        color: white;
+      }
+    }
+  }
+}
 
 @media (max-width: 768px) {
   .howToProtect {
     .d-flex.left {
       flex-direction: row;
       text-align: left;
+    }
+  }
+
+  .doctors {
+    .staffCardsSection {
+      .staffCardsCtn {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .staffImgCtn, .staffContactCtn {
+        height: 40vw;
+      }
     }
   }
 }
